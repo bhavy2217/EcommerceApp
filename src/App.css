@@ -1,0 +1,169 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Home.jsx CSS */
+.PosterDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PosterDiv img{
+  width: 20%;
+aspect-ratio: 3/2;
+transition: all 1s ease-out;
+}
+.PosterDiv img:hover{
+transform: scale(1.2,1.2);
+}
+/* Home.jsx CSS */
+
+
+/* Navbar.jsx CSS */
+.topnav {
+  overflow: hidden;
+  background-color: #2874f0;
+  box-shadow: 0px 1px 10px 1px gray;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+#navCartBtn{
+  background-color:#2874f0;
+  /* border-radius:9px; */
+  padding:5px 13px;
+  border:1px solid #2874f0;
+}
+#navCartBtn:hover{ 
+  background-color: #2874f0;
+  box-shadow: 0px 0px 4px 1px rgb(39, 39, 39);
+}
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/* Navbar.jsx CSS */
+
+/* Product.jsx CSS */
+#card{
+  /* box-shadow: 0px 0px 5px 1px rgb(153, 153, 153); */
+  /* font-size: 20px; */
+}
+#card:hover{
+  /* box-shadow: 0px 0px 5px 1px rgb(153, 153, 153); */
+      box-shadow: 0px 0px 5px 1px rgb(166, 207, 224);
+      transition: 0.1s ease-in-out;
+    }
+    #card-image{
+    transition : all 0.2s ease-in-out;
+    }
+    #card-image:hover{
+      transform: scale(1.05,1.05);
+    }
+    #viewDetails {
+      font-size: 17px;
+      box-shadow: 0px 0px 3px 1px rgb(219, 219, 219);
+    }
+    #viewDetails :hover{
+      color: rgb(93, 35, 93);
+}
+
+#cartImg{
+  padding:3px 10px;
+  background-color:white;
+  border:none;
+  opacity:70%;
+}
+#cartImg:hover{
+  opacity:100%;
+}
+    /* Product.jsx CSS */
+
+    /* SingleProducts starts */
+    table{
+      border:1px solid rgb(220, 220, 220);
+      width:300px;
+    }
+    table tr{
+      border:1px solid rgb(220, 220, 220);
+    }
+    table td{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      /* border:1px solid rgb(179, 179, 179); */
+    }
+    /* SingleProducts Ends */
+  
+    /* Cart Starts */
+    #Cartcard{
+      box-shadow: 0px 0px 1px 0px  rgb(166, 207, 224);
+    }
+    #Cartcard:hover{
+      box-shadow: 0px 0px 3px 1px rgb(166, 207, 224);      
+    }
+    /* Carts Ends  */
+
+
+/* Scroll Bar CSS Start */
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+  background-color:white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(72, 72, 72);
+  border-radius: 50px;
+}
+/* Scroll Bar CSS Ends*/
